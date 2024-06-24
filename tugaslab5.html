@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions</title>
+</head>
+<body>
+<script>
+let nilaiMahasiswaHasriana = [90, 80, 75, 95, 85];
+nilaiMahasiswaHasriana.map((nilai, index) => {
+    console.log("nilai Mahasiswa ke " + index + " adalah " + nilai);
+});
+
+//Contoh kasus untuk if else
+let nilai = 80;
+if (nilai >= 80){
+    document.write("nilai kamu A");
+}else if ( nilai >= 70){
+    document.write("nilai kamu B");
+}else if (nilai >= 60){
+    document.write("nilai kamu C");
+}else {
+    document.write("nilai kamu Nol");
+}
+//game check jodoh
+let namaCewek = Ridha;
+let namaCowok = Akbar;
+let hasil = Math.floor(Math.random() * 71) + 30;
+if (hasil >= 80){
+    document.write("selamat " + namaCewek + " dan " + namaCowok + " adalah jodoh sejati");
+} else if (hasil >= 70) {
+    document.write("selamat " + namaCewek + " dan " + namaCowok + " adalah yang di sengajai");
+}else if (hasil >= 60){
+    document.write("selamat " + namaCewek + " dan " + namaCowok + " adalah jodoh yang palsu");
+}else {
+    document.write("maaf " + namaCewek + " dan " + namaCowok + " tidak jodoh ");
+}
+
+</script>
+</body>
+</html>
